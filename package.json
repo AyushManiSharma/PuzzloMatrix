@@ -1,0 +1,11 @@
+{
+  "name": "puzzlomatrix",
+  "version": "1.0.0",
+  "description": "Quiz Taking applciation that stores user scores",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ayush, Anvar, Michael ",
+  "license": "ISC"
+}
