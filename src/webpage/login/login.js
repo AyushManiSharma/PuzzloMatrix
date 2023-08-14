@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (username === storedUsername && password === storedPassword) {
           // Clear error message
           errorMessage.textContent = "Login successful!";
+          window.location.href = "../category/category.html";
 
           // You can redirect the user to another page or perform any other action here
       } else {

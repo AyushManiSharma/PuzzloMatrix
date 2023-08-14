@@ -79,13 +79,16 @@ footer {
     border-top: 1px solid #ffffff;
 }
 
-#registerButton,
+#loggedInLabel {
+    color: white;
+    font-weight: bold;
+}
 #loginButton {
     display:table-row;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
-    background-color: #005fc4;
+    background-color: #792727;
     border-radius: 5px;
     margin-bottom: 10px;
     margin-top: 10px;
