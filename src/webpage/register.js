@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("registration-form");
 
-    form.addEventListener("submit", function(event) {
+    form.addEventListener("register", function(event) {
         event.preventDefault();
 
         const username = document.getElementById("username").value;
@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem("email", email);
         localStorage.setItem("password", password);
 
-        // You might want to redirect the user to another page or show a success message here
+        //create a redirect back to login page
+        window.location.href = "./login.html";
     });
 });
