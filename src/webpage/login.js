@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Simulate a successful login for demonstration purposes
       if (username === "user" && password === "password") {
         // Clear error message
-        errorMessage.textContent = "";
+        errorMessage.textContent = "Login successful!";
 
         // You can redirect the user to another page or perform any other action here
         alert("Login successful!");
