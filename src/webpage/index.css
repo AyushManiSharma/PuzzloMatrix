@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://wallpaperboat.com/wp-content/uploads/2020/04/aesthetic-moon-wallpaper-1920x1080-1.jpg');
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+}
+.container {
+    text-align: center;
+}
+.title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.description {
+    font-size: 1.5rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    color: white;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
