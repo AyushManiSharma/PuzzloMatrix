@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem("email", email);
         localStorage.setItem("password", password);
 
-        //create a redirect back to login page
+        // Redirect to login page
         window.location.href = "./login.html";
     });
 });
