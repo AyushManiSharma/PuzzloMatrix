@@ -14,6 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem("password", password);
 
         // Redirect to login page
-        window.location.href = "./login.html";
+        window.location.href = "../login/login.html";
     });
 });
