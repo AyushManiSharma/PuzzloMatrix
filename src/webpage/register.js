@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("registration-form");
 
-    form.addEventListener("register", function(event) {
+    form.addEventListener("submit", function(event) {
         event.preventDefault();
 
         const username = document.getElementById("username").value;
