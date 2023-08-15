@@ -30,7 +30,14 @@ User.init(
               len: [8],
             },
         },
-    }
+    },
+    {
+        sequelize,
+        timestamps: false,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'users',
+      }
 );
 
 module.exports = User;
