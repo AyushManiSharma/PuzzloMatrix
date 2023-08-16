@@ -12,7 +12,7 @@ Score.init(
               key: 'id',
             },
           },
-          name: {
+          username: {
             type: DataTypes.STRING,
             references: {
                 model: 'user',
