@@ -2,18 +2,6 @@ const router = require('express').Router();
 const bcrypt = require('bcrypt');
 const { User, Score } = require('../../models');
 
-// GET all users
-router.get('/', async (req, res) => {
-    try {
-      const userData = await User.findAll({
-        include: [{ model: Score }],
-      });
-      res.status(200).json(userData);
-    } catch (err) {
-      res.status(500).json(err);
-    }
-  });
-
   // GET a single user
 router.get('/:id', async (req, res) => {
     try {
@@ -33,7 +21,7 @@ router.get('/:id', async (req, res) => {
   });
 
 // CREATE a new user
-router.post('/', async (req, res) => {
+router.post('/register', async (req, res) => {
   try {
     const newUser = req.body;
     // hash the password from 'req.body' and save to newUser
@@ -65,5 +53,27 @@ router.delete('/:id', async (req, res) => {
       res.status(500).json(err);
     }
   });
+
+  router.post('/login/login.html', async (req, res) => {
+  try {
+    const userData = await User.findOne({ where: { email: req.body.email } });
+    if (!userData) {
+      res.status(404).json({ message: 'Login failed. Please try again!' });
+      return;
+    }
+
+    const validPassword = await bcrypt.compare(
+      req.body.password,
+      userData.password
+    );
+    if (!validPassword) {
+      res.status(400).json({ message: 'Login failed. Please try again!' });
+      return;
+    }
+    res.status(200).json({ message: 'You are now logged in!' });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 module.exports = router;
