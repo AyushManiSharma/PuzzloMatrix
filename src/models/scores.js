@@ -12,13 +12,13 @@ Score.init(
               key: 'id',
             },
           },
-          // username: {
-          //   type: DataTypes.STRING,
-          //   references: {
-          //       model: 'user',
-          //       key: 'name',
-          //     }
-          // },
+          username: {
+            type: DataTypes.STRING,
+            references: {
+                model: 'user',
+                key: 'name',
+              }
+          },
           category:
           {
             type: DataTypes.STRING,
