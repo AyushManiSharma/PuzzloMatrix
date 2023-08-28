@@ -12,7 +12,7 @@ Score.init(
               key: 'id',
             },
           },
-          username: {
+          name: {
             type: DataTypes.STRING,
             references: {
                 model: 'user',
@@ -28,6 +28,7 @@ Score.init(
             type: DataTypes.INTEGER,
             allowNull: true,
           }
+          //update Date & Time
     }
 );
 
