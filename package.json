@@ -4,6 +4,7 @@
   "description": "Quiz Taking applciation that stores user scores",
   "main": "index.js",
   "scripts": {
+    "start" : "node puzzlomatrix.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ayush, Anvar, Michael ",
