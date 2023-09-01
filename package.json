@@ -4,12 +4,13 @@
   "description": "Quiz Taking applciation that stores user scores",
   "main": "index.js",
   "scripts": {
-    "start" : "node src/routes/index.js",
+    "start": "node src/routes/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ayush, Anvar, Michael ",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mysql2": "^3.5.2",
     "sequelize": "^6.32.1"
