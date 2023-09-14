@@ -1,23 +1,16 @@
-const { Sequelize, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connections.js');
 
-class Score {}
+class Score extends Model{}
 
-new Score (
+Score.init (
     {
         user_id: {
             type: DataTypes.INTEGER,
             references: {
-              model: 'user',
-              key: 'id',
+              model: 'users',
+              key: 'user_id',
             },
-          },
-          name: {
-            type: DataTypes.STRING,
-            references: {
-                model: 'user',
-                key: 'name',
-              }
           },
           category:
           {
@@ -29,6 +22,13 @@ new Score (
             allowNull: true,
           }
           //update Date & Time
+    },
+    {
+      sequelize,
+      timestamps: false,
+      freezeTableName: true,
+      underscored: true,
+      modelName: 'scores',
     }
 );
 

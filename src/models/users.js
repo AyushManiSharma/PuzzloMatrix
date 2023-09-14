@@ -1,9 +1,9 @@
-const { Sequelize, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connections.js');
 
-class User {}
+class User extends Model {}
 
-new User(
+User.init(
     {
         user_id: {
             type: DataTypes.INTEGER,
@@ -33,6 +33,8 @@ new User(
     },
     {
         sequelize,
+        timestamps: false,
+        freezeTableName: true,
         underscored: true,
         modelName: 'users',
       }
