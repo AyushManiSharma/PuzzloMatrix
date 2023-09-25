@@ -1,25 +1,25 @@
 const router = require('express').Router();
 const path = require('path');
-const mysql = require('mysql'); // Import the MySQL library
+// const mysql = require('mysql2'); // Import the MySQL library
 
-// Create a MySQL connection
-const db = mysql.createConnection({
-  host: 'localhost', 
-  user: 'username', 
-  password: 'password', 
-  database: 'user_db', 
-  email: 'email',
-  user_id: 'user_id',
-});
+// // Create a MySQL connection
+// const db = mysql.createConnection({
+//   host: 'localhost', 
+//   user: 'root', 
+//   password: 'rootpass', 
+//   database: 'user_db', 
+//   // email: 'email',
+//   // user_id: 'user_id',
+// });
 
-// Connect to the MySQL database
-db.connect((err) => {
-  if (err) {
-    console.error('Error connecting to MySQL: ' + err.stack);
-  } else {
-    console.log('Connected to MySQL as id ' + db.threadId);
-  }
-});
+// // Connect to the MySQL database
+// db.connect((err) => {
+//   if (err) {
+//     console.error('Error connecting to MySQL: ' + err.stack);
+//   } else {
+//     console.log('Connected to MySQL as id ' + db.threadId);
+//   }
+// });
 
 const apiRoutes = require('./api');
 
@@ -40,6 +40,10 @@ router.get('/register', (req, res) => {
 
 router.get('/category', (req, res) => {
   res.sendFile(path.join(__dirname, '../webpage/category/category.html'));
+});
+
+router.get('/quizzes/javascript', (req, res) => {
+  res.sendFile(path.join(__dirname, '../webpage/quizzes//javascript/javascript.html'));
 });
 
 // Example route to handle storing data in the database
