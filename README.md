@@ -1,11 +1,11 @@
 # PuzzloMatrix
 ## Main Task
 
-An application for users to register an account and take quizzes on different code modules.
-Register an account by pressing the register button or by going to: /register
-Login by using the same credentials or by going to: /login
-after login, you will be presented with the categories available or go to: /category
-and then select a category like "JavaScript" : /quizzes/javascript
+* An application for users to register an account and take quizzes on different code modules.
+* Register an account by pressing the register button or by going to: /register
+* Login by using the same credentials or by going to: /login
+* after login, you will be presented with the categories available or go to: /category
+* and then select a category like "JavaScript" : /quizzes/javascript
 
 ## Requirements:
 
