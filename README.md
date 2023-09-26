@@ -7,6 +7,12 @@
 * after login, you will be presented with the categories available or go to: /category
 * and then select a category like "JavaScript" : /quizzes/javascript
 
+## Install and Run Instructions
+
+* pull code into VS code
+* run the server on localhost using npm start
+* open the project on localhost:3001
+
 ## Final Work Review
 
 ### The following images demonstrates the application functionality:
