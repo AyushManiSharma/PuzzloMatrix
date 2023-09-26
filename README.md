@@ -9,10 +9,14 @@
 
 ## Install and Run Instructions
 
-* pull code into VS code
-* run npm
-* npm install express
-* run the server on localhost using npm start
+* install node.js from: https://nodejs.org/en
+* fork code into VS code
+* install npm
+* create pkg.json by running "npm init"
+* install mysql2: "npm install --save mysql2"
+* install express: "npm install express"
+* install sequelize: "npm install --save sequelize"
+* run the server on localhost using "npm start"
 * open the project on localhost:3001
 
 
