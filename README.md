@@ -10,6 +10,8 @@
 ## Install and Run Instructions
 
 * pull code into VS code
+* run npm
+* npm install express
 * run the server on localhost using npm start
 * open the project on localhost:3001
 
