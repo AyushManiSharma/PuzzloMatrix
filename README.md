@@ -1,4 +1,7 @@
 # PuzzloMatrix
+## Description
+PuzzloMatrix is a website in which users can create an account and log in to take different coding quizzes to test their knowledge.
+
 ## Main Task
 
 * An application for users to register an account and take quizzes on different code modules.
