@@ -7,6 +7,7 @@
 * after login, you will be presented with the categories available or go to: /category
 * and then select a category like "JavaScript" : /quizzes/javascript
 
+
 ## Project Requirements 
 * Use Node.js and Express.js to create a RESTful API.
 * Use Handlebars.js as the template engine.
@@ -22,6 +23,13 @@
 * Be interactive (i.e., accept and respond to user input).
 * Meet good-quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
 * Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
+
+## Install and Run Instructions
+
+* pull code into VS code
+* run the server on localhost using npm start
+* open the project on localhost:3001
+
 
 ## Final Work Review
 
