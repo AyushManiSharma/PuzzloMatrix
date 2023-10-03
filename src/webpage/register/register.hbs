@@ -1,0 +1,30 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/register.css">
+    <title>{{pageTitle}}</title>
+</head>
+<body>
+    <div class="container">
+        <h1>{{registrationTitle}}</h1>
+        <form id="registration-form">
+            <label for="username">{{usernameLabel}}</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">{{emailLabel}}</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">{{passwordLabel}}</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">{{registerButtonLabel}}</button>
+
+            <p>{{loginMessage}}</p>
+        </form>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>

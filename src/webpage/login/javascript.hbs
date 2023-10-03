@@ -1,0 +1,23 @@
+<script>
+  
+  var source = document.getElementById("login-template").innerHTML;
+
+  // Compile the template
+  var template = Handlebars.compile(source);
+
+  var data = {
+    pageTitle: 'Login',
+    loginTitle: 'Login',
+    usernameLabel: 'Username:',
+    passwordLabel: 'Password:',
+    loginButtonLabel: 'Login',
+    errorMessage: '', // Provide an error message if needed
+    registrationMessage: 'Don\'t have an account? <a href="../register/register.html">Register</a>'
+  };
+
+  // Render the template with the data
+  var html = template(data);
+
+  // Insert the rendered HTML into your webpage
+  document.body.innerHTML = html;
+</script>
