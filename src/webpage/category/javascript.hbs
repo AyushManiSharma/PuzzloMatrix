@@ -1,0 +1,27 @@
+<script>
+    // Get the Handlebars template from the script tag with the specified ID
+    var source = document.getElementById("quiz-template").innerHTML;
+    
+
+    var template = Handlebars.compile(source);
+
+    var data = {
+        pageTitle: 'Quiz Category',
+        headerTitle: 'Quiz Category',
+        loggedInUser: 'John Doe', 
+        loginButtonLabel: 'Logout',
+        quizItems: [
+            { quizTitle: 'HTML' },
+            { quizTitle: 'CSS' },
+            { quizTitle: 'JavaScript' },
+            { quizTitle: 'SQL' }
+        ],
+        currentYear: new Date().getFullYear()
+    };
+
+    // Render the template with the data
+    var html = template(data);
+
+    // Insert the rendered HTML into your webpage
+    document.body.innerHTML = html;
+</script>

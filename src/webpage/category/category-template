@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/category.css">
+    <title>{{pageTitle}}</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">{{headerTitle}}</h1>
+        <div class="header-buttons">
+            <span id="loggedInLabel">{{loggedInUser}}</span>
+            <button id="loginButton">{{loginButtonLabel}}</button>
+        </div>
+    </header>
+    <main>
+        <section class="quizss">
+            {{#each quizItems}}
+            <article class="quizs">
+                <!--<img src="{{imageSrc}}" alt="{{quizTitle}}">-->
+                <h2>{{quizTitle}}</h2>
+            </article>
+            {{/each}}
+        </section>
+    </main>
+    <footer>
+        <p>&copy; {{currentYear}} PuzzloMatrix</p>
+    </footer>
+    <script src="category.js"></script>
+</body>
+</html>
